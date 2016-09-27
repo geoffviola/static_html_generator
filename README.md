@@ -16,7 +16,9 @@ Setup a directory structure as follows
  
 ## Features
  - Include another file from the resources folder with %filename.html%. For example, %header.html% will replace that string with the contents of the header.html file
- - Automatically generate thumbnails, when the width and height attributes are set to the img tag. Also, setting the filename to skeleton\_image\_width\_height works as well. For example, my\_cool\_image\_100\_200.png will turn into a thumbnail of width 100 and height 200.
+ - Automatically generate thumbnails
+   - Uses the width and height attributes are set to the img tag
+   - Generates when the filename is skeleton\_image\_width\_height. For example, my\_cool\_image\_100\_200.png will turn into a thumbnail of width 100 and height 200.
  - All the HTML files are automatically formatted for readability. 
  
 ##  Options

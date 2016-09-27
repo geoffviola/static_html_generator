@@ -230,6 +230,8 @@ def get_list_of_files_in_directory(directory_name, global_ignore_filenames):
 def move_temp_folder_to_other_folder(temp_folder, new_folder):
     if os.path.isdir(new_folder):
         delete_files_in_dir(new_folder)
+    if not os.path.exists(new_folder):
+        os.makedirs(new_folder)
     copy_files_in_dir(temp_folder, new_folder)
     if os.path.isdir(temp_folder):
         shutil.rmtree(temp_folder)
